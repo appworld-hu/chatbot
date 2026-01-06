@@ -12,7 +12,7 @@ class ProjectInfoController extends Controller
     {
         $this->authorize('superAdmin');
 
-        $file = file_get_contents('https://raw.githubusercontent.com/appworld-hu/chatbot-modified/refs/heads/main/sources/composer.json');
+        $file = file_get_contents('https://raw.githubusercontent.com/appworld-hu/chatbot/refs/heads/master/sources/composer.json');
         $latestVersion = json_decode($file)->version;
 
         return new JsonResponse([

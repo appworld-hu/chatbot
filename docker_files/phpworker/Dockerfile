@@ -1,4 +1,4 @@
-FROM auravitalii/promptchat:php3.1
+FROM appworldhu/promptchat:php3.1
 
 ARG uid
 
